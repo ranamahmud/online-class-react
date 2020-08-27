@@ -7,9 +7,11 @@ import { useState } from 'react'
 
 const Class = () => {
   const [courses, setCourses] = useState(fakeData);
+  console.log(fakeData);
 
   const [cart, setCart] = useState([])
   const handleAddCourse = (course) => {
+    console.log('product added', course);
     const newCart = [...cart, course]
     setCart(newCart)
   }
