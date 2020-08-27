@@ -10,6 +10,7 @@ const Class = () => {
 
   const [cart, setCart] = useState([])
   const handleAddCourse = (course) => {
+    console.log('product added', course);
     const newCart = [...cart, course]
     setCart(newCart)
   }
