@@ -2,7 +2,7 @@ import React from 'react';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {  Container} from 'react-bootstrap';
+import { Navbar, Nav, Form, FormControl, Button, Container, Row, Col } from 'react-bootstrap';
 import Header from '../src/Component/Header/Header'
 import Class from '../src/Component/Class/Class'
 function App() {
