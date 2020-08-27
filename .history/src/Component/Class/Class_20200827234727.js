@@ -1,6 +1,6 @@
 import React from 'react';
 import Cart from '../Cart/Cart'
-import { Container, Col, Row } from 'react-bootstrap'
+import { Container, Col, Row, CardGroup } from 'react-bootstrap'
 import Course from '../Course/Course'
 import fakeData from '../../fakeData/FakeData'
 import { useState } from 'react'
@@ -10,6 +10,7 @@ const Class = () => {
 
   const [cart, setCart] = useState([])
   const handleAddCourse = (course) => {
+    console.log('product added', course);
     const newCart = [...cart, course]
     setCart(newCart)
   }
