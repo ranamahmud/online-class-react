@@ -16,7 +16,6 @@ const Cart = (props) => {
             {
                 marginTop: "20px"
             }
-
         }>
             <h4>Order Summary</h4>
             <p>Courses Enrolled: {cart.length}</p>

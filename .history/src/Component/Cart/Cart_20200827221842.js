@@ -12,14 +12,9 @@ const Cart = (props) => {
         return Number(precision);
     }
     return (
-        <div style={
-            {
-                marginTop: "20px"
-            }
-
-        }>
+        <div>
             <h4>Order Summary</h4>
-            <p>Courses Enrolled: {cart.length}</p>
+            <p>Courses Ordered: {cart.length}</p>
             <p>Total Course Price: {formatNumber(total)}</p>
             <p><small>Tax + VAT: {tax}</small></p>
             <p>Total Price: {total + tax}</p>

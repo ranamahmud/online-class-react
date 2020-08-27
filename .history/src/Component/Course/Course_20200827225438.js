@@ -1,14 +1,14 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
-import './Course.css'
+import {Card, Button} from 'react-bootstrap';
+import './Course'
 const Course = (props) => {
 
-  const { name, author, price, img } = props.course;
+    const { name,author, price, img } = props.course;
 
-  return (
-    <div class="col-sm">
+    return (
+      <div class="col-sm">
 
-      <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={img} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
@@ -16,11 +16,11 @@ const Course = (props) => {
             <p>By: {author}</p>
             <h3><small>Price: ${price}</small></h3>
           </Card.Text>
-          <Button variant="primary" onClick={() => { props.handleAddCourse(props.course) }}>Enroll Now</Button>
+          <Button variant="primary" onClick={() =>{}}>Enroll Now</Button>
         </Card.Body>
       </Card>
-    </div>
-  );
+      </div>
+    );
 };
 
 export default Course;

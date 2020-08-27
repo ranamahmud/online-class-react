@@ -14,9 +14,8 @@ const Cart = (props) => {
     return (
         <div style={
             {
-                marginTop: "20px"
-            }
-
+                marginTop: "20px"            }
+            
         }>
             <h4>Order Summary</h4>
             <p>Courses Enrolled: {cart.length}</p>
